@@ -1,0 +1,76 @@
+----------------------------------------------------------------------
+Component: fh-amqp-js
+----------------------------------------------------------------------
+Release 0.6.0 - 2016-05-19 - Wei Li
+* Add support for amqp heartbeat
+
+Release 0.5.0 - 2015-07-09 - Wei Li
+* FHMAP-717 - Add support for remote procedure calls (RPC).
+
+Release 0.4.5 - 2015-06-06 - Craig Brookes
+* FHMAP-692 - ensure channels close after publish
+
+Release 0.4.4 - 2015-05-28 - Wei Li
+* FHMAP-499 - Add new event types for openshift deployment
+
+Release 0.4.3 - 2015-04-29 - FH-164 - Gerard Ryan
+* Use grunt instead of make for build lifecycle
+* Fix jshint errors
+* Use mocha instead of whiskey for tests
+* Use istanbul instead of whiskey for coverage
+
+Release 0.4.2 - 2015-04-14 - FH-144 - Gerard Ryan
+* Add npm-shrinkwrap.json file to lock dependency versions
+
+Release 0.4.1 - 2015-02-12 - IR246 - Wei Li
+* Use hostname instead of host when parsing connection strings.
+
+Release 0.4.0 - 2015-02-06 - IR246 - Wei Li
+* 8750 - Improve API and resillence to RabbitMQ failures.
+
+Release 0.3.2 - 2015-01-08 - IR244 - Martin Murphy
+------------------------------------------------------
+* 8610 - specify dependency versions in package.json (by removing ^)
+
+Release 0.3.1 - 2014-10-29 - IR239 -Wei Li
+------------------------------------------------------
+* Keep exchange declaration backward compatible.
+
+Release 0.3.0 - 2014-10-29 - IR239 -Wei Li
+------------------------------------------------------
+* Ticket 8212 - Automatically reconnect to rabbitmq server if it restarts
+
+Release 0.2.4 - 2014-10-13 - IR238 - David Martin
+-----------------------------------------------------
+* Ticket 8128 - Added task worker publish to fh-amqp-js
+
+Release 0.2.3 - 2014-10-05 - IR238 - Damian Beresford
+-----------------------------------------------------
+* Ticket 8009 - fh-amqp-js: add millicore related event types
+* Ticket 8036 - Added task worker subscribe to fh-amqp-js
+
+Release 0.2.2 - 2014-09-23 - IR237 - Damian Beresford
+-----------------------------------------------------
+* Ticket 8009 - fh-amqp-js: add millicore related event types
+
+Release 0.2.1 - 2013-09-20 - IR208 - Damian Beresford
+-----------------------------------------------------
+* Ticket 4741 Additional events needed for Dyno/App Import/Export
+
+Release 0.2.0 - 2013-08-13 - IR208 - Damian Beresford
+-----------------------------------------------------
+* Ticket 4505 fh-amqp-js.js sub command not working with single cluster node
+* Ticekt 4515 fh-amqp-js should export constants for the known event types
+
+Release 0.1.2 - 2013-06-19 - IR204 - Wei Li
+-----------------------------------------------
+* Update deploy failed event type
+
+Release 0.1.1 - 2013-06-19 - IR204 - Wei Li
+-----------------------------------------------
+* Move default events into amqp js
+
+Release 0.1.0 - 2013-04-17 - IR199 - Damian Beresford
+-----------------------------------------------------
+
+* Ticket 3732 RabbitMQ clustering: new node.js module for FH node services.

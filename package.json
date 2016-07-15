@@ -1,0 +1,32 @@
+{
+  "name": "fh-amqp-js",
+  "version": "0.7.0",
+  "description": "FeedHenry AMQP Client",
+  "main": "./lib/amqpjs.js",
+  "bin": "./fh-amqp-js.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "amqp": "0.2.0",
+    "async": "0.2.7",
+    "lodash": "2.4.1",
+    "node-uuid": "^1.4.4",
+    "rc": "0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "grunt": "^1.0.1",
+    "grunt-fh-build": "^1.0.1",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.2.4",
+    "proxyquire": "0.4.0",
+    "xunit-file": "0.0.9"
+  },
+  "private": false,
+  "scripts": {
+    "test": "grunt eslint fh-test",
+    "version": "sed -i.bak \"s/sonar.projectVersion=.*/sonar.projectVersion=${npm_package_version}/\" sonar-project.properties && rm sonar-project.properties.bak && git add sonar-project.properties"
+  },
+  "license": "Apache-2.0"
+}
