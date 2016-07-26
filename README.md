@@ -1,12 +1,19 @@
 fh-amqp-js
 ==========
 
-FeedHenry AMQP client wrapper for communication with a Rabbit cluster. 
+[![npm package](https://nodei.co/npm/fh-amqp-js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/fh-amqp-js/)
+
+[![Build status](https://img.shields.io/travis/feedhenry/fh-amqp-js/master.svg?style=flat-square)](https://travis-ci.org/feedhenry/fh-amqp-js)
+[![Dependency Status](https://img.shields.io/david/feedhenry/fh-amqp-js.svg?style=flat-square)](https://david-dm.org/feedhenry/fh-amqp-js)
+[![Known Vulnerabilities](https://snyk.io/test/npm/fh-amqp-js/badge.svg?style=flat-square)](https://snyk.io/test/npm/fh-amqp-js)
+
+
+FeedHenry AMQP client wrapper for communication with a Rabbit cluster.
 
 Overview
 --------
 
-The FeedHenry Platform includes a RabbitMQ cluster, which is set up to have highly available [Mirrored Queues](http://www.rabbitmq.com/ha.html). The messaging pattern that best suits our development requirements is the 'Topic' pattern, described in the RabbitMQ [documentation](http://www.rabbitmq.com/tutorials/tutorial-five-python.html). 
+The FeedHenry Platform includes a RabbitMQ cluster, which is set up to have highly available [Mirrored Queues](http://www.rabbitmq.com/ha.html). The messaging pattern that best suits our development requirements is the 'Topic' pattern, described in the RabbitMQ [documentation](http://www.rabbitmq.com/tutorials/tutorial-five-python.html).
 
 This client library helps with the following:
 
@@ -30,8 +37,8 @@ API
 ### fhamqpjs.AMQPManager(cfg)
 
 * cfg (Object) - Specify the AMQP connection details and other connection options.
-  
-  * cfg.clusterNodes 
+
+  * cfg.clusterNodes
 
     This is required. The clusterNodes can be either an array of amqp URIs, or the connection configuration object specified in https://github.com/postwait/node-amqp#connection-options-and-url. If the clusterNodes are an array of amqp URIs, they will be converted to node-amqp connection configuration. E.g.
 
@@ -90,7 +97,7 @@ Subscribe to a topic. Even if the connection is down at the time when this funct
 * qName (String) - The name of the queue.
 * filter (String) - The pattern to filter the messages.
 * subscribeFunc (Function) - The function to subscribe.
-* opts (Object) - The option for the queue. This is optional. 
+* opts (Object) - The option for the queue. This is optional.
   * defaults: {durable: true, autoDelete: false}
 * cb (Function) - function(err){}. If error is not null, it means there is a problem with the connection and can not subscribe to it at the moment. However, it will be subscribed again once there is a valid connection.
 
@@ -272,7 +279,7 @@ or:
 
     make test-coverage-cli
 
-or: 
+or:
 
     make test-coverage-html
 

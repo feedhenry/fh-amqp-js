@@ -19,16 +19,6 @@
       "from": "async@0.2.7",
       "resolved": "https://registry.npmjs.org/async/-/async-0.2.7.tgz"
     },
-    "deep-extend": {
-      "version": "0.2.11",
-      "from": "deep-extend@>=0.2.5 <0.3.0",
-      "resolved": "https://registry.npmjs.org/deep-extend/-/deep-extend-0.2.11.tgz"
-    },
-    "ini": {
-      "version": "1.1.0",
-      "from": "ini@>=1.1.0 <1.2.0",
-      "resolved": "https://registry.npmjs.org/ini/-/ini-1.1.0.tgz"
-    },
     "lodash": {
       "version": "2.4.1",
       "from": "lodash@2.4.1",
@@ -39,20 +29,34 @@
       "from": "node-uuid@>=1.4.4 <2.0.0",
       "resolved": "https://registry.npmjs.org/node-uuid/-/node-uuid-1.4.7.tgz"
     },
-    "optimist": {
-      "version": "0.3.7",
-      "from": "optimist@>=0.3.4 <0.4.0",
-      "resolved": "https://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz"
-    },
     "rc": {
       "version": "0.1.1",
       "from": "rc@0.1.1",
-      "resolved": "https://registry.npmjs.org/rc/-/rc-0.1.1.tgz"
-    },
-    "wordwrap": {
-      "version": "0.0.3",
-      "from": "wordwrap@>=0.0.2 <0.1.0",
-      "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz"
+      "resolved": "https://registry.npmjs.org/rc/-/rc-0.1.1.tgz",
+      "dependencies": {
+        "optimist": {
+          "version": "0.3.7",
+          "from": "optimist@>=0.3.4 <0.4.0",
+          "resolved": "https://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz",
+          "dependencies": {
+            "wordwrap": {
+              "version": "0.0.3",
+              "from": "wordwrap@>=0.0.2 <0.1.0",
+              "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz"
+            }
+          }
+        },
+        "deep-extend": {
+          "version": "0.2.11",
+          "from": "deep-extend@>=0.2.5 <0.3.0",
+          "resolved": "https://registry.npmjs.org/deep-extend/-/deep-extend-0.2.11.tgz"
+        },
+        "ini": {
+          "version": "1.1.0",
+          "from": "ini@>=1.1.0 <1.2.0",
+          "resolved": "https://registry.npmjs.org/ini/-/ini-1.1.0.tgz"
+        }
+      }
     }
   }
 }

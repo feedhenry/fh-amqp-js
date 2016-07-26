@@ -2,6 +2,10 @@
   "name": "fh-amqp-js",
   "version": "0.7.0",
   "description": "FeedHenry AMQP Client",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feedhenry/fh-amqp-js.git"
+  },
   "main": "./lib/amqpjs.js",
   "bin": "./fh-amqp-js.js",
   "directories": {
@@ -15,6 +19,7 @@
     "rc": "0.1.1"
   },
   "devDependencies": {
+    "codecov": "^1.0.1",
     "eslint": "^2.7.0",
     "grunt": "^1.0.1",
     "grunt-fh-build": "^1.0.1",
