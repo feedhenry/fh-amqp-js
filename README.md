@@ -16,8 +16,8 @@ FeedHenry AMQP client wrapper for communication with a Rabbit cluster.
 | Build:          | npm  |
 | Documentation:  | http://docs.feedhenry.com/v3/api/cloud_api.html  |
 | Issue tracker:  | https://issues.jboss.org/projects/FH/summary  |
-| Mailing list:  | [feedhenry-dev](https://www.redhat.com/archives/feedhenry-dev/) ([subscribe](https://www.redhat.com/mailman/listinfo/feedhenry-dev))  |
-
+| Mailing list:   | [feedhenry-dev](https://www.redhat.com/archives/feedhenry-dev/) ([subscribe](https://www.redhat.com/mailman/listinfo/feedhenry-dev))  |
+| IRC:            | [#feedhenry](https://webchat.freenode.net/?channels=feedhenry) channel in the [freenode](http://freenode.net/) network.  |
 
 Overview
 --------
