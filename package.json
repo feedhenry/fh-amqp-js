@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/feedhenry/fh-amqp-js.git"
   },
+  "engines": {
+    "node": "4.4"
+  },
   "main": "./lib/amqpjs.js",
   "bin": "./fh-amqp-js.js",
   "directories": {
