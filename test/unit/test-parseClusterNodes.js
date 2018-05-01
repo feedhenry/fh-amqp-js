@@ -1,4 +1,4 @@
-var parseClusterNodes = require('../lib/parseClusterNodes.js');
+var parseClusterNodes = require('../../lib/parseClusterNodes.js');
 var assert = require('assert');
 
 exports.test_parse_cluster_nodes = function(done) {
