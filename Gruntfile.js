@@ -1,17 +1,18 @@
 module.exports = function(grunt) {
   'use strict';
-
-  // Just set shell commands for running different types of tests
   grunt.initConfig({
-    unit_cmd: 'mocha',
-    unit_args: '-A -u exports --recursive -t 10000 ./test/test-*.js',
-    unit: '<%= unit_cmd %> <%= unit_args %>',
-
-    istanbul_cmd: 'istanbul cover --dir cov-unit',
-    unit_cover: '<%= istanbul_cmd %> <%= unit_cmd %> -- <%= unit_args %>'
+    _test_runner: '_mocha',
+    _istanbul: 'istanbul cover --dir',
+    _unit_args: '--recursive -t 10000 ./test/unit',
+    unit: '<%= _test_runner %> <%= _unit_args %>',
+    unit_cover: '<%= _istanbul %> cov-unit <%= _test_runner %> -- <%= _unit_args %>',
+    integrate:['<%= _test_runner %> ./test/integrate'],
+    accept:['<%= _test_runner %> ./test/accept'],
+    mochaTest: {
+      all: ['./test/*.js']
+    }
   });
-
+  grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-fh-build');
-  grunt.registerTask('default', ['fh:default']);
-
+  grunt.registerTask('default', ['mochaTest', 'fh:default']);
 };
