@@ -1,6 +1,6 @@
 {
   "name": "fh-amqp-js",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "dependencies": {
     "amqp": {
       "version": "0.2.6",
