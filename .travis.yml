@@ -7,7 +7,6 @@ sudo: false
 after_script:
   - codecov
 before_install:
-  - npm install -g npm@3.10.8
   - npm install -g grunt-cli
 install: npm install
 script:
