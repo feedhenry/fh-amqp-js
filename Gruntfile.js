@@ -3,11 +3,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     _test_runner: '_mocha',
     _istanbul: 'istanbul cover --dir',
-    _unit_args: '--recursive -t 10000 ./test/unit',
-    unit: '<%= _test_runner %> <%= _unit_args %>',
-    unit_cover: '<%= _istanbul %> cov-unit <%= _test_runner %> -- <%= _unit_args %>',
-    integrate:['<%= _test_runner %> ./test/integrate'],
-    accept:['<%= _test_runner %> ./test/accept'],
+    _unit_args: 'b -A -u exports -t 20000',
+    unit: '<%= _test_runner %> <%= _unit_args %> --recursive ./test/unit/**/test*.js --exit',
+    unit_cover: ['istanbul cover --dir cov-unit -- node_modules/.bin/_mocha <%= _unit_args %> --recursive ./test/unit/**/test*.js'],
+    integrate:['<%= _test_runner %> ./test/integrate --exit'],
+    accept:['<%= _test_runner %> ./test/accept --exit'],
     mochaTest: {
       all: ['./test/*.js']
     }
