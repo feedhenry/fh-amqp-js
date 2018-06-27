@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "amqp": "0.2.6",
-    "async": "1.4.0",
+    "async": "1.5.2",
     "lodash": "4.17.10",
     "node-uuid": "^1.4.4",
-    "rc": "1.2.7"
+    "rc": "1.2.8"
   },
   "devDependencies": {
     "ajv": "6.5.0",
